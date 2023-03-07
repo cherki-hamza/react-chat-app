@@ -35,6 +35,7 @@ const Chat = () => {
 
         axios.get('https://api.chatengine.io/users/me', {
             headers: {
+                'Access-Control-Allow-Origin': '*',
                 'project-id': process.env.REACT_APP_CHAT_ENGINE_ID,
                 'user-name': user.email,
                 'user-secret': user.uid,
