@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "../Auth/Login";
 import { AuthProvider } from "../../context/AuthContext";
 import Chat from "../Chat/Chat";
+import Privacypolicy from "../prevacy/Privacypolicy";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/chats" element={<Chat />} />
           <Route path="/" element={<Login />} />
+          <Route path="/privacy-policy" element={<Privacypolicy />} />
         </Routes>
       </AuthProvider>
     </div>
